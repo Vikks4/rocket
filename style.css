@@ -6,6 +6,7 @@ body {
 .container {
     height: 100%;
     display: flex;
+   
 
 }
 
@@ -15,6 +16,7 @@ body {
     width: 70%;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/qbit-club.appspot.com/o/scale_1200.jpeg?alt=media&token=1a6bd2b6-f31a-4e51-901d-2215930f7863);
     background-size: cover;
+   
 }
 
 .cup {
@@ -60,6 +62,7 @@ button {
 
 #rocket img {
     height: 100%;
+    animation: planet 2.5s infinite;
 }
 
 @media (max-width:800px) {
@@ -85,3 +88,12 @@ button {
         height: 70px;
     }
 }
+
+@keyframes planet {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(3deg); }
+   95% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
