@@ -80,6 +80,7 @@ button {
     .forButton {
         width: 50%;
         height: auto;
+        font-size: 20px;
     }
 
     #rocket {
