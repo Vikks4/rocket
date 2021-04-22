@@ -37,7 +37,7 @@ function setNewRocket() {
     newRocket.style.display = "none"
     rocket.style.display = "block"
     countDown.innerHTML = "Ракета на старте"
-    rocket.style.bottom = "50px"
+    rocket.style.bottom = "5px"
     buttonStart.style.display = "block"
 
 }
