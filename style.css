@@ -13,12 +13,12 @@ body {
     position: relative;
     height: 100%;
     width: 70%;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/qbit-club.appspot.com/o/scale_1200.jpeg?alt=media&token=1a6bd2b6-f31a-4e51-901d-2215930f7863);
+    background-image: url(space.jpeg);
     background-size: cover;
    
 }
 
-.cup {
+.controlPanel  {
     width: 30%;
     height: 100%;
     display: flex;
@@ -26,7 +26,7 @@ body {
 }
 
 #countDown,
-.forButton {
+.forButtons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,8 +34,10 @@ body {
     height: 50%;
     font-size: 40px;
     font-weight: bold;
-
 }
+
+
+
 
 button {
     font-size: 20px;
@@ -61,8 +63,11 @@ button {
 
 #rocket img {
     height: 100%;
-    animation: planet 2.5s infinite;
+    animation: shake 2.5s infinite;
 }
+
+
+
 
 @media (max-width:800px) {
     .container {
@@ -71,13 +76,13 @@ button {
     .planet {
         width: 100%;
     }
-    .cup {
+    .controlPanel {
         width: 100%;
         height: 20%;
         flex-direction: row;
     }
     #countDown,
-    .forButton {
+    .forButtons {
         width: 50%;
         height: auto;
         font-size: 20px;
@@ -89,7 +94,7 @@ button {
     }
 }
 
-@keyframes planet {
+@keyframes shake {
     0% { transform: rotate(0deg); }
    80% { transform: rotate(0deg); }
    85% { transform: rotate(3deg); }

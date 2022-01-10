@@ -7,7 +7,7 @@ let timerId
 
 function start() {
     if (second == 10) {
-        timerId = setInterval(() => subtract(), 1000);
+        timerId = setInterval(() => subtraction(), 1000);
     }
     return
 }
@@ -16,10 +16,10 @@ function hide() {
     rocket.style.display = "none"
     buttonStart.style.display = "none"
     newRocket.style.display = "block"
-    second = 10
+    second = 8
 }
 
-function subtract() {
+function subtraction() {
     if (second == 0) {
         countDown.innerHTML = "Поехали!!!"
         clearInterval(timerId);
